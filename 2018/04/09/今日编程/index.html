@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="有这样一道智力题：“某商店规定：三个空汽水瓶可以换一瓶汽水。小张手上有十个空汽水瓶，她最多可以换多少瓶汽水喝？”答案是5瓶，方法如下：先用9个空瓶子换3瓶汽水，喝掉3瓶满的，喝完以后4个空瓶子，用3个再换一瓶，喝掉这瓶满的，这时候剩2个空瓶子。然后你让老板先借给你一瓶汽水，喝掉这瓶满的，喝完以后用3个空瓶子换一瓶满的还给老板。如果小张手上有n个空汽水瓶，最多可以换多少瓶汽水喝？ /*递归问题，三个瓶子换一瓶加一个空瓶子，两个瓶子正好消灭掉*/ <br> import java.util.*; <br> public class Main{ <br>  public static void main(String[] args){ <br>      Scanner sc = new Scanner(System.in); <br>    while(sc.hasNext()){ <br>       int N = sc.nextInt(); <br>      System.out.println(bottom(N)); <br>  } <br> } <br> public static int bottom(int num){ <br>  if(num==0||num==1){ <br>    return 0; <br>  } <br> if(num==2){ <br>   return 1; <br>  } <br> return bottom(num-2)+1; <br> } <br> }," />
 
 
 
@@ -79,13 +79,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="sammirika的个人小站">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="keywords" content="有这样一道智力题：“某商店规定：三个空汽水瓶可以换一瓶汽水。小张手上有十个空汽水瓶，她最多可以换多少瓶汽水喝？”答案是5瓶，方法如下：先用9个空瓶子换3瓶汽水，喝掉3瓶满的，喝完以后4个空瓶子，用3个再换一瓶，喝掉这瓶满的，这时候剩2个空瓶子。然后你让老板先借给你一瓶汽水，喝掉这瓶满的，喝完以后用3个空瓶子换一瓶满的还给老板。如果小张手上有n个空汽水瓶，最多可以换多少瓶汽水喝？ &#x2F;*递归问题，三个瓶子换一瓶加一个空瓶子，两个瓶子正好消灭掉*&#x2F; &lt;br&gt; import java.util.*; &lt;br&gt; public class Main{ &lt;br&gt;  public static void main(String[] args){ &lt;br&gt;      Scanner sc = new Scanner(System.in); &lt;br&gt;    while(sc.hasNext()){ &lt;br&gt;       int N = sc.nextInt(); &lt;br&gt;      System.out.println(bottom(N)); &lt;br&gt;  } &lt;br&gt; } &lt;br&gt; public static int bottom(int num){ &lt;br&gt;  if(num==0||num==1){ &lt;br&gt;    return 0; &lt;br&gt;  } &lt;br&gt; if(num==2){ &lt;br&gt;   return 1; &lt;br&gt;  } &lt;br&gt; return bottom(num-2)+1; &lt;br&gt; } &lt;br&gt; }">
+<meta property="og:type" content="article">
+<meta property="og:title" content="今日编程">
+<meta property="og:url" content="http://yoursite.com/2018/04/09/今日编程/index.html">
 <meta property="og:site_name" content="sammirika的个人小站">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-09T15:14:49.595Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sammirika的个人小站">
+<meta name="twitter:title" content="今日编程">
 
 
 
@@ -115,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/09/今日编程/"/>
 
 
 
 
 
-  <title>sammirika的个人小站</title>
+  <title>今日编程 | sammirika的个人小站</title>
   
 
 
@@ -140,8 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +215,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +247,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/09/今日编程/" itemprop="url">今日编程</a></h1>
+          <h1 class="post-title" itemprop="name headline">今日编程</h1>
         
 
         <div class="post-meta">
@@ -299,10 +298,6 @@
 
       
         
-          
-            
-          
-        
       
     </div>
     
@@ -317,142 +312,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/09/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sammirika的个人小站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/09/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-09T22:53:03+08:00">
-                2018-04-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/有这样一道智力题：“某商店规定：三个空汽水瓶可以换一瓶汽水。小张手上有十个空汽水瓶，她最多可以换多少瓶汽水喝？”答案是5瓶，方法如下：先用9个空瓶子换3瓶汽水，喝掉3瓶满的，喝完以后4个空瓶子，用3个再换一瓶，喝掉这瓶满的，这时候剩2个空瓶子。然后你让老板先借给你一瓶汽水，喝掉这瓶满的，喝完以后用3个空瓶子换一瓶满的还给老板。如果小张手上有n个空汽水瓶，最多可以换多少瓶汽水喝？-递归问题，三个瓶子换一瓶加一个空瓶子，两个瓶子正好消灭掉-br-import-java-util-br-public-class-Main-br-public-static-void-main-String-args-br-Scanner-sc-new-Scanner-System-in-br-while-sc-hasNext-br-int-N-sc-nextInt-br-System-out-println-bottom-N-br-br-br-public-static-int-bottom-int-num-br-if-num-0-num-1-br-return-0-br-br-if-num-2-br-return-1-br-br-return-bottom-num-2-1-br-br/" rel="tag"># 有这样一道智力题：“某商店规定：三个空汽水瓶可以换一瓶汽水。小张手上有十个空汽水瓶，她最多可以换多少瓶汽水喝？”答案是5瓶，方法如下：先用9个空瓶子换3瓶汽水，喝掉3瓶满的，喝完以后4个空瓶子，用3个再换一瓶，喝掉这瓶满的，这时候剩2个空瓶子。然后你让老板先借给你一瓶汽水，喝掉这瓶满的，喝完以后用3个空瓶子换一瓶满的还给老板。如果小张手上有n个空汽水瓶，最多可以换多少瓶汽水喝？ /*递归问题，三个瓶子换一瓶加一个空瓶子，两个瓶子正好消灭掉*/ <br> import java.util.*; <br> public class Main{ <br>  public static void main(String[] args){ <br>      Scanner sc = new Scanner(System.in); <br>    while(sc.hasNext()){ <br>       int N = sc.nextInt(); <br>      System.out.println(bottom(N)); <br>  } <br> } <br> public static int bottom(int num){ <br>  if(num==0||num==1){ <br>    return 0; <br>  } <br> if(num==2){ <br>   return 1; <br>  } <br> return bottom(num-2)+1; <br> } <br> }</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/09/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -462,10 +351,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -473,6 +363,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -678,6 +572,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
